@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <!-- --------------------------------------------- -->
+    <!-- メニューバー -->
+    <!-- --------------------------------------------- -->
+    <header id="top-head">
+  <div class="inner">
+      <div id="mobile-head">
+        <h3 class="menu_top">Tea works</h3>
+          <div id="nav-toggle">
+              <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+      </div>
+      <nav id="global-nav">
+          <ul>
+            <li><a href="index.html" class="init-bottom"><ruby><rb>HOME</rb></ruby></a></li>
+            <li><a href="menu/place.html" class="init-bottom"><ruby><rb>場所で</rb></ruby></a></li>
+            <li><a href=""><ruby><rb>目的で</rb></ruby></a></li>
+            <li><a href="" class="init-bottom"><ruby><rb>人数で</rb></ruby></a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+    <!-- --------------------------------------------- -->
+    <!-- --------------------------------------------- -->
+    <h1 class="title">Tea Works</h1>
+    <h1 class="title1">カフェ巡りコミュニティ</h1>
+    <!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="timeline_20200317_233442.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="timeline_20200310_062839.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="timeline_20200327_132401.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="timeline_20200327_132448.jpg" alt=""></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<script type="text/javascript">
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    speed:1000,
+    autoplay:4000,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides : true,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      }
+    }
+  })
+</script>
+
+  </body>
+</html>
