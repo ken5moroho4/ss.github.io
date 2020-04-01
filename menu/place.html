@@ -11,13 +11,13 @@
         <div id="search-result__list"></div>
       </div>
     </div>
-
+    <h1>登録駅</h1>
     <ul class="target-area">
-      <li>表参道駅</li>
-      <li>渋谷駅</li>
-      <li>新宿駅</li>
-      <li>銀座駅</li>
-      <li>すいか500円</li>
+      <li><a href="where/omotesandou.html">表参道駅</a></li>
+      <li><a href="where/shibuya.html">渋谷駅</a></li>
+      <li><a href="where/sinzyuku.html">新宿駅</a></li>
+      <li><a href="where/hutagotama.html">二子玉川駅</a></li>
+      <li><a href="where/tokyo.html">東京駅</a></li>
     </ul>
   </div><!-- /.wrapper -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -51,14 +51,29 @@ $(function () {
 
       // 検索結果をページに出力
       for (var i = 0; i < searchResult.length; i ++) {
+        if (searchText == "表参道") {
+        $('<a href="where/omotesandou.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
+      }
         if (searchText == "表参道駅") {
         $('<a href="where/omotesandou.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
+      }
+        if (searchText == "渋谷") {
+        $('<a href="where/shibuya.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
       }
         if (searchText == "渋谷駅") {
         $('<a href="where/shibuya.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
       }
+        if (searchText == "新宿") {
+        $('<a href="where/sinzyuku.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
+      }
         if (searchText == "新宿駅") {
         $('<a href="where/sinzyuku.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
+      }
+        if (searchText == "二子玉川駅") {
+        $('<a href="where/hutagotama.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
+      }
+        if (searchText == "二子玉川") {
+        $('<a href="where/hutagotama.html"><span>').text(searchResult[i]).appendTo('#search-result__list');
       }
       }
 

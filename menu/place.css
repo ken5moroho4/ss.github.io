@@ -1,3 +1,6 @@
+body{
+  background-color: #e0ffff;
+}
 .search-area input[type="text"] {
   padding: 5px 5px 3px;
   font-size: 40px;
@@ -22,10 +25,6 @@
   margin-right: 15px;
   padding: 5px;
   background: #F2F2F2;
-}
-.target-area {
-  margin-top: 50px;
-  display: none;
 }
 
 /* 見出し */
@@ -60,4 +59,19 @@ h2:after{
  left: 21px;
  width: 15px; /* 白抜き円の幅 */
  height: 15px; /* 白抜き円の高さ */
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+li{
+  color: black;
+  font-size: 30px;
+}
+h1{
+  margin-top: 50px;
 }
