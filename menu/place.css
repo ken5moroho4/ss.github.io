@@ -19,6 +19,7 @@ body{
 }
 #search-result__list {
   margin-top: 15px;
+  font-size: 30px;
 }
 #search-result__list span {
   display: inline-block;
@@ -26,6 +27,7 @@ body{
   padding: 5px;
   background: #F2F2F2;
 }
+
 
 /* 見出し */
 h2{
